@@ -1,0 +1,86 @@
+[gd_scene load_steps=16 format=3 uid="uid://bnlxv4j0vw5q"]
+
+[ext_resource type="Script" uid="uid://hor6ob6awnil" path="res://rigid_body_2d.gd" id="1_8vm8w"]
+[ext_resource type="Texture2D" uid="uid://bif8vbquelyyb" path="res://Dreamer_0001.png" id="2_604vm"]
+[ext_resource type="Texture2D" uid="uid://cpha631rrq3ny" path="res://Dreamer_0002.png" id="3_1cba2"]
+[ext_resource type="Texture2D" uid="uid://cmenva2qwb1u8" path="res://Dreamer_0003.png" id="4_3x2xk"]
+[ext_resource type="Texture2D" uid="uid://320ehgkms54f" path="res://Dreamer_0004.png" id="5_qoy1w"]
+[ext_resource type="Texture2D" uid="uid://bq2cm1kyapxlg" path="res://Dreamer_0005.png" id="6_qtypq"]
+[ext_resource type="Texture2D" uid="uid://uw734bfjj6gs" path="res://Dreamer_0006.png" id="7_xhrcy"]
+[ext_resource type="Texture2D" uid="uid://b0o4uvpcpc2b6" path="res://Dreamer_0007.png" id="8_7l372"]
+[ext_resource type="Texture2D" uid="uid://c538fhpfed6hm" path="res://Dreamer_0008.png" id="9_t6nbh"]
+[ext_resource type="Texture2D" uid="uid://drbwcjulfy0mg" path="res://Dreamer_0009.png" id="10_hx54d"]
+[ext_resource type="Texture2D" uid="uid://cwmdjyl5lhew3" path="res://Dreamer_0010.png" id="11_mgfi4"]
+[ext_resource type="Texture2D" uid="uid://haf4lv5c4jdk" path="res://Dreamer_0011.png" id="12_5ytrp"]
+[ext_resource type="Texture2D" uid="uid://bg1pnqbrreki7" path="res://Dreamer_0012.png" id="13_pbkth"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t5oue"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_604vm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1cba2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3x2xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qoy1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qtypq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xhrcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7l372")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_t6nbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hx54d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mgfi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5ytrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pbkth")
+}],
+"loop": true,
+"name": &"dreamer",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_og6rg"]
+radius = 46.66667
+height = 103.33334
+
+[node name="RigidBody2D" type="RigidBody2D"]
+position = Vector2(104, 79)
+scale = Vector2(0.6, 0.6)
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_8vm8w")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.9073486e-06, 3.333332)
+scale = Vector2(1.859375, 1.75)
+sprite_frames = SubResource("SpriteFrames_t5oue")
+animation = &"dreamer"
+frame_progress = 0.6459666
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_og6rg")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

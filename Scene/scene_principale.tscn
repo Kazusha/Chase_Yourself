@@ -1,0 +1,416 @@
+[gd_scene load_steps=100 format=3 uid="uid://d0kjch22bbvur"]
+
+[ext_resource type="Script" uid="uid://ce0hdm0gqkqk1" path="res://Scene/scene_principale.gd" id="1_gc0hi"]
+[ext_resource type="PackedScene" uid="uid://bnlxv4j0vw5q" path="res://Scene/rigid_body_2d.tscn" id="2_3tlob"]
+[ext_resource type="PackedScene" uid="uid://c3cne5lr1do8k" path="res://Scene/player.tscn" id="2_y2376"]
+[ext_resource type="Texture2D" uid="uid://bd3436kv0ntj0" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_21.png" id="3_xj4gw"]
+[ext_resource type="Texture2D" uid="uid://drxn71kjo2dny" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_22.png" id="4_sn162"]
+[ext_resource type="Texture2D" uid="uid://632axaiimdhy" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_23.png" id="5_jbav2"]
+[ext_resource type="Texture2D" uid="uid://dom3203t2t1oc" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_24.png" id="6_81mbo"]
+[ext_resource type="Texture2D" uid="uid://c1mtgc1ncnlcs" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_25.png" id="7_nuydp"]
+[ext_resource type="Texture2D" uid="uid://c32thcdsc30cm" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_26.png" id="8_qcw6u"]
+[ext_resource type="Texture2D" uid="uid://dp5je5drwyjvy" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_27.png" id="9_i4sgl"]
+[ext_resource type="Texture2D" uid="uid://boqg1i4hchm3v" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_28.png" id="10_cef36"]
+[ext_resource type="Texture2D" uid="uid://vr46gff2mwhe" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_29.png" id="11_c80ws"]
+[ext_resource type="Texture2D" uid="uid://cg6s3fw8qxa2v" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTile_30.png" id="12_3l6rc"]
+[ext_resource type="Texture2D" uid="uid://b13qgpk1j6ycy" path="res://sqare.png" id="13_ovfx8"]
+[ext_resource type="Texture2D" uid="uid://dxdxv4ae0d3o8" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_06.png" id="14_dms8d"]
+[ext_resource type="Texture2D" uid="uid://22t5r4dsyxmo" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_07.png" id="15_bnovv"]
+[ext_resource type="Texture2D" uid="uid://b4ox5sro3ij3m" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_08.png" id="16_jkdwv"]
+[ext_resource type="Texture2D" uid="uid://dj7rms0ttwnx1" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_09.png" id="17_e38j7"]
+[ext_resource type="Texture2D" uid="uid://c0ws4kpdw2ul8" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_10.png" id="18_l55k2"]
+[ext_resource type="Texture2D" uid="uid://c3f4u3wbnvq0m" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_11.png" id="19_b3g8r"]
+[ext_resource type="Texture2D" uid="uid://b1swftuytwvrw" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_12.png" id="20_2oi11"]
+[ext_resource type="Texture2D" uid="uid://bmrl2vcij0t72" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_13.png" id="21_nebn3"]
+[ext_resource type="Texture2D" uid="uid://gqruuqlv6rj8" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_14.png" id="22_lb2at"]
+[ext_resource type="Texture2D" uid="uid://dhx61vw6lyteb" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_15.png" id="23_882ks"]
+[ext_resource type="Texture2D" uid="uid://0hrcnqtrhc6l" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_16.png" id="24_vwmhy"]
+[ext_resource type="Texture2D" uid="uid://bod3hmelrnnyo" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_17.png" id="25_72yw8"]
+[ext_resource type="Texture2D" uid="uid://bvagkgdpmsmnv" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_18.png" id="26_axc0p"]
+[ext_resource type="Texture2D" uid="uid://cnw8rq46nek2k" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_19.png" id="27_p03hg"]
+[ext_resource type="Texture2D" uid="uid://c7rxliyau23om" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_20.png" id="28_mm6wg"]
+[ext_resource type="Texture2D" uid="uid://b2jwcw7sha870" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_21.png" id="29_vl0kd"]
+[ext_resource type="Texture2D" uid="uid://dl3bdqywsusm" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_22.png" id="30_qpste"]
+[ext_resource type="Texture2D" uid="uid://cs5l7phckear0" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_23.png" id="31_xaqdy"]
+[ext_resource type="Texture2D" uid="uid://x86qdi28i7st" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_24.png" id="32_lkoht"]
+[ext_resource type="Texture2D" uid="uid://c21y3uarxtehv" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_25.png" id="33_c4mwk"]
+[ext_resource type="Texture2D" uid="uid://cjsuto5sh60jy" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_26.png" id="34_3ng28"]
+[ext_resource type="Texture2D" uid="uid://bovfxwvkni7tw" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_27.png" id="35_nlxbl"]
+[ext_resource type="Texture2D" uid="uid://chgnp8noytj85" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_28.png" id="36_dccy7"]
+[ext_resource type="Texture2D" uid="uid://dl6p4vvsfgvdb" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_29.png" id="37_jiue3"]
+[ext_resource type="Texture2D" uid="uid://mc2sb8kwaptx" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_30.png" id="38_2y23q"]
+[ext_resource type="Texture2D" uid="uid://bcudmofqfqwsi" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_31.png" id="39_wbv8m"]
+[ext_resource type="Texture2D" uid="uid://d2sg6txf6mtnq" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_32.png" id="40_lgqyh"]
+[ext_resource type="Texture2D" uid="uid://ds1lbqpcnv0eq" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_33.png" id="41_7ur1k"]
+[ext_resource type="Texture2D" uid="uid://brylmu3om56k0" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_34.png" id="42_ulyf7"]
+[ext_resource type="Texture2D" uid="uid://3kb0q2hgrmb5" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_35.png" id="43_mppck"]
+[ext_resource type="Texture2D" uid="uid://xuijr5174l4t" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_36.png" id="44_2qw42"]
+[ext_resource type="Texture2D" uid="uid://ccp74w4kewnyh" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_37.png" id="45_qcpfw"]
+[ext_resource type="Texture2D" uid="uid://c1ymdscjttbja" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_38.png" id="46_k0fli"]
+[ext_resource type="Texture2D" uid="uid://jw56ly3rs577" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_39.png" id="47_g7mp5"]
+[ext_resource type="Texture2D" uid="uid://dux6wfdeufn8a" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1.1 Tiles/Tile2_40.png" id="48_wmvmr"]
+[ext_resource type="Texture2D" uid="uid://bpxg28dfgrwnh" path="res://sqarne.png" id="49_xdcaf"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6fdy"]
+texture = ExtResource("3_xj4gw")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e12ru"]
+texture = ExtResource("4_sn162")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrv8d"]
+texture = ExtResource("5_jbav2")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lspq4"]
+texture = ExtResource("6_81mbo")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acrda"]
+texture = ExtResource("7_nuydp")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_42nbm"]
+texture = ExtResource("8_qcw6u")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hlf1m"]
+texture = ExtResource("9_i4sgl")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fao2y"]
+texture = ExtResource("10_cef36")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_srkns"]
+texture = ExtResource("11_c80ws")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mn5ja"]
+texture = ExtResource("12_3l6rc")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ot3j"]
+texture = ExtResource("13_ovfx8")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2yifb"]
+texture = ExtResource("14_dms8d")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a6ojw"]
+texture = ExtResource("15_bnovv")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ukwmu"]
+texture = ExtResource("16_jkdwv")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rke1o"]
+texture = ExtResource("17_e38j7")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ijy73"]
+texture = ExtResource("18_l55k2")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wpr5"]
+texture = ExtResource("19_b3g8r")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pjs1b"]
+texture = ExtResource("20_2oi11")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_srogh"]
+texture = ExtResource("21_nebn3")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0oco8"]
+texture = ExtResource("22_lb2at")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7sopq"]
+texture = ExtResource("23_882ks")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fgun5"]
+texture = ExtResource("24_vwmhy")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bfwuu"]
+texture = ExtResource("25_72yw8")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_smr6t"]
+texture = ExtResource("26_axc0p")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ie41c"]
+texture = ExtResource("27_p03hg")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ctjqr"]
+texture = ExtResource("28_mm6wg")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_he1sm"]
+texture = ExtResource("29_vl0kd")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jvf3n"]
+texture = ExtResource("30_qpste")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v8bye"]
+texture = ExtResource("31_xaqdy")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvnuw"]
+texture = ExtResource("32_lkoht")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_imqvr"]
+texture = ExtResource("33_c4mwk")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ran2q"]
+texture = ExtResource("34_3ng28")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ltfyp"]
+texture = ExtResource("35_nlxbl")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cmj8q"]
+texture = ExtResource("36_dccy7")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nd0ts"]
+texture = ExtResource("37_jiue3")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ufg0y"]
+texture = ExtResource("38_2y23q")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcr8k"]
+texture = ExtResource("39_wbv8m")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pjxot"]
+texture = ExtResource("40_lgqyh")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0way0"]
+texture = ExtResource("41_7ur1k")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i8xgy"]
+texture = ExtResource("42_ulyf7")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_62aao"]
+texture = ExtResource("43_mppck")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pjweu"]
+texture = ExtResource("44_2qw42")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_126aj"]
+texture = ExtResource("45_qcpfw")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rlotp"]
+texture = ExtResource("46_k0fli")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cprda"]
+texture = ExtResource("47_g7mp5")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hpj4d"]
+texture = ExtResource("48_wmvmr")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ajx0q"]
+texture = ExtResource("49_xdcaf")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xwley"]
+resource_local_to_scene = true
+tile_size = Vector2i(32, 32)
+uv_clipping = true
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+sources/46 = SubResource("TileSetAtlasSource_q6fdy")
+sources/47 = SubResource("TileSetAtlasSource_e12ru")
+sources/48 = SubResource("TileSetAtlasSource_lrv8d")
+sources/49 = SubResource("TileSetAtlasSource_lspq4")
+sources/50 = SubResource("TileSetAtlasSource_acrda")
+sources/51 = SubResource("TileSetAtlasSource_42nbm")
+sources/52 = SubResource("TileSetAtlasSource_hlf1m")
+sources/53 = SubResource("TileSetAtlasSource_fao2y")
+sources/54 = SubResource("TileSetAtlasSource_srkns")
+sources/55 = SubResource("TileSetAtlasSource_mn5ja")
+sources/56 = SubResource("TileSetAtlasSource_6ot3j")
+sources/62 = SubResource("TileSetAtlasSource_2yifb")
+sources/63 = SubResource("TileSetAtlasSource_a6ojw")
+sources/64 = SubResource("TileSetAtlasSource_ukwmu")
+sources/65 = SubResource("TileSetAtlasSource_rke1o")
+sources/66 = SubResource("TileSetAtlasSource_ijy73")
+sources/67 = SubResource("TileSetAtlasSource_0wpr5")
+sources/68 = SubResource("TileSetAtlasSource_pjs1b")
+sources/69 = SubResource("TileSetAtlasSource_srogh")
+sources/70 = SubResource("TileSetAtlasSource_0oco8")
+sources/71 = SubResource("TileSetAtlasSource_7sopq")
+sources/72 = SubResource("TileSetAtlasSource_fgun5")
+sources/73 = SubResource("TileSetAtlasSource_bfwuu")
+sources/74 = SubResource("TileSetAtlasSource_smr6t")
+sources/75 = SubResource("TileSetAtlasSource_ie41c")
+sources/76 = SubResource("TileSetAtlasSource_ctjqr")
+sources/77 = SubResource("TileSetAtlasSource_he1sm")
+sources/78 = SubResource("TileSetAtlasSource_jvf3n")
+sources/79 = SubResource("TileSetAtlasSource_v8bye")
+sources/80 = SubResource("TileSetAtlasSource_pvnuw")
+sources/81 = SubResource("TileSetAtlasSource_imqvr")
+sources/82 = SubResource("TileSetAtlasSource_ran2q")
+sources/83 = SubResource("TileSetAtlasSource_ltfyp")
+sources/84 = SubResource("TileSetAtlasSource_cmj8q")
+sources/85 = SubResource("TileSetAtlasSource_nd0ts")
+sources/86 = SubResource("TileSetAtlasSource_ufg0y")
+sources/87 = SubResource("TileSetAtlasSource_tcr8k")
+sources/88 = SubResource("TileSetAtlasSource_pjxot")
+sources/89 = SubResource("TileSetAtlasSource_0way0")
+sources/90 = SubResource("TileSetAtlasSource_i8xgy")
+sources/91 = SubResource("TileSetAtlasSource_62aao")
+sources/92 = SubResource("TileSetAtlasSource_pjweu")
+sources/93 = SubResource("TileSetAtlasSource_126aj")
+sources/94 = SubResource("TileSetAtlasSource_rlotp")
+sources/95 = SubResource("TileSetAtlasSource_cprda")
+sources/96 = SubResource("TileSetAtlasSource_hpj4d")
+sources/97 = SubResource("TileSetAtlasSource_ajx0q")
+tile_proxies/coords_level = [[26, Vector2i(0, 0)], [56, Vector2i(0, 0)], [27, Vector2i(0, 0)], [56, Vector2i(1, 0)], [28, Vector2i(0, 0)], [56, Vector2i(2, 0)], [29, Vector2i(0, 0)], [56, Vector2i(3, 0)], [30, Vector2i(0, 0)], [56, Vector2i(0, 1)], [31, Vector2i(0, 0)], [56, Vector2i(1, 1)], [32, Vector2i(0, 0)], [56, Vector2i(2, 1)], [33, Vector2i(0, 0)], [56, Vector2i(3, 1)], [34, Vector2i(0, 0)], [56, Vector2i(0, 2)], [35, Vector2i(0, 0)], [56, Vector2i(1, 2)], [36, Vector2i(0, 0)], [56, Vector2i(2, 2)], [37, Vector2i(0, 0)], [56, Vector2i(3, 2)], [38, Vector2i(0, 0)], [56, Vector2i(0, 3)], [39, Vector2i(0, 0)], [56, Vector2i(1, 3)], [40, Vector2i(0, 0)], [56, Vector2i(2, 3)], [41, Vector2i(0, 0)], [56, Vector2i(3, 3)], [42, Vector2i(0, 0)], [56, Vector2i(0, 4)], [43, Vector2i(0, 0)], [56, Vector2i(1, 4)], [44, Vector2i(0, 0)], [56, Vector2i(2, 4)], [45, Vector2i(0, 0)], [56, Vector2i(3, 4)], [57, Vector2i(0, 0)], [97, Vector2i(0, 0)], [58, Vector2i(0, 0)], [97, Vector2i(1, 0)], [59, Vector2i(0, 0)], [97, Vector2i(2, 0)], [60, Vector2i(0, 0)], [97, Vector2i(3, 0)], [61, Vector2i(0, 0)], [97, Vector2i(4, 0)]]
+
+[sub_resource type="Curve2D" id="Curve2D_3tlob"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 8, 8, 0, 0, 0, 0, 1344, 0, 0, 0, 0, 0, 1360, 720, 0, 0, 0, 0, 16, 712, 0, 0, 0, 0, 8, 16)
+}
+point_count = 5
+
+[node name="scene_principale" type="Node"]
+script = ExtResource("1_gc0hi")
+mob_scene = ExtResource("2_3tlob")
+
+[node name="start_position" type="Marker2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="."]
+process_mode = 3
+physics_interpolation_mode = 1
+z_as_relative = false
+y_sort_enabled = true
+texture_filter = 1
+tile_set = SubResource("TileSet_xwley")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 56, 0, 65536, 56, 1, 131072, 56, 2, 196608, 56, 3, 262144, 56, 4, 1, 65592, 0, 65537, 65592, 1, 131073, 65592, 2, 196609, 65592, 3, 262145, 65592, 4, 2, 131128, 0, 65538, 131128, 1, 131074, 131128, 2, 196610, 131128, 3, 262146, 56, 0, 3, 196664, 0, 65539, 196664, 1, 131075, 196664, 2, 196611, 196664, 3, 262147, 65592, 0, 327680, 56, 0, 393216, 56, 1, 458752, 56, 0, 524288, 56, 1, 589824, 56, 2, 327681, 65592, 0, 393217, 65592, 1, 458753, 65592, 0, 524289, 65592, 1, 589825, 65592, 2, 327682, 56, 1, 393218, 56, 2, 458754, 56, 3, 524290, 56, 4, 589826, 131128, 2, 327683, 65592, 1, 393219, 65592, 2, 458755, 65592, 3, 524291, 65592, 4, 589827, 56, 1, 655360, 56, 3, 720896, 56, 4, 655361, 65592, 3, 720897, 65592, 4, 655362, 131128, 3, 720898, 131128, 4, 655363, 56, 2, 720899, 56, 3, 786432, 56, 0, 851968, 56, 1, 917504, 56, 2, 983040, 56, 3, 1048576, 56, 4, 786433, 65592, 0, 851969, 65592, 1, 917505, 65592, 2, 983041, 65592, 3, 1048577, 65592, 4, 786434, 131128, 0, 851970, 131128, 1, 917506, 131128, 2, 983042, 131128, 3, 1048578, 131128, 4, 786435, 56, 4, 851971, 196664, 1, 917507, 196664, 2, 983043, 196664, 3, 1048579, 196664, 4, 1114112, 56, 0, 1179648, 56, 1, 1245184, 56, 2, 1310720, 56, 3, 1376256, 56, 4, 1114113, 65592, 0, 1179649, 65592, 1, 1245185, 65592, 2, 1310721, 65592, 3, 1376257, 65592, 4, 1114114, 131128, 0, 1179650, 131128, 1, 1245186, 131128, 2, 1310722, 131128, 3, 1376258, 131128, 4, 1114115, 196664, 0, 1179651, 196664, 1, 1245187, 196664, 2, 1310723, 196664, 3, 1376259, 196664, 4, 1114116, 56, 0, 1179652, 56, 1, 1245188, 56, 2, 1310724, 56, 3, 1376260, 56, 4, 1114117, 65592, 0, 1179653, 65592, 1, 1245189, 65592, 2, 1310725, 65592, 3, 1376261, 65592, 4, 1114118, 131128, 0, 1179654, 131128, 1, 1245190, 131128, 2, 1310726, 131128, 3, 1376262, 131128, 4, 1114119, 196664, 0, 1179655, 196664, 1, 1245191, 196664, 2, 1310727, 196664, 3, 1376263, 196664, 4, 1114120, 56, 0, 1179656, 56, 1, 1245192, 56, 2, 1310728, 56, 3, 1376264, 56, 4, 1114121, 65592, 0, 1179657, 65592, 1, 1245193, 65592, 2, 1310729, 65592, 3, 1376265, 65592, 4, 1114122, 131128, 0, 1179658, 131128, 1, 1245194, 131128, 2, 1310730, 131128, 3, 1376266, 131128, 4, 1114123, 196664, 0, 1179659, 196664, 1, 1245195, 196664, 2, 1310731, 196664, 3, 1376267, 196664, 4, 1114124, 56, 0, 1179660, 56, 1, 1245196, 56, 2, 1310732, 56, 3, 1376268, 56, 4, 1114125, 65592, 0, 1179661, 65592, 1, 1245197, 65592, 2, 1310733, 65592, 3, 1376269, 65592, 4, 1114126, 131128, 0, 1179662, 131128, 1, 1245198, 131128, 2, 1310734, 131128, 3, 1376270, 131128, 4, 1114127, 196664, 0, 1179663, 196664, 1, 1245199, 196664, 2, 1310735, 196664, 3, 1376271, 196664, 4, 1114128, 56, 0, 1179664, 56, 1, 1245200, 56, 2, 1310736, 56, 3, 1376272, 56, 4, 1114129, 65592, 0, 1179665, 65592, 1, 1245201, 65592, 2, 1310737, 65592, 3, 1376273, 65592, 4, 1114130, 131128, 0, 1179666, 131128, 1, 1245202, 131128, 2, 1310738, 131128, 3, 1376274, 131128, 4, 1114131, 196664, 0, 1179667, 196664, 1, 1245203, 196664, 2, 1310739, 196664, 3, 1376275, 196664, 4, 1114132, 56, 0, 1179668, 56, 1, 1245204, 56, 2, 1310740, 56, 3, 1376276, 56, 4, 1114133, 65592, 0, 1179669, 65592, 1, 1245205, 65592, 2, 1310741, 65592, 3, 1376277, 65592, 4, 1114134, 131128, 0, 1179670, 131128, 1, 1245206, 131128, 2, 1310742, 131128, 3, 1376278, 131128, 4, 1114135, 56, 4, 1179671, 196664, 1, 1245207, 196664, 2, 1310743, 196664, 3, 1376279, 196664, 4, 1114136, 65592, 4, 1179672, 56, 1, 1245208, 56, 2, 1310744, 56, 3, 1376280, 56, 4, 1114137, 131128, 4, 1179673, 65592, 1, 1245209, 65592, 2, 1310745, 65592, 3, 1376281, 65592, 4, 1114138, 196664, 4, 1179674, 131128, 1, 1245210, 131128, 2, 1310746, 131128, 3, 1376282, 131128, 4, 1114139, 56, 4, 1179675, 196664, 1, 1245211, 196664, 2, 1310747, 196664, 3, 1376283, 196664, 4, 1114140, 65592, 4, 1179676, 56, 1, 1245212, 56, 2, 1310748, 56, 3, 1376284, 56, 4, 1114141, 131128, 4, 1179677, 65592, 1, 1245213, 65592, 2, 1310749, 65592, 3, 1376285, 65592, 4, 1114142, 196664, 4, 1179678, 131128, 1, 1245214, 131128, 2, 1310750, 131128, 3, 1376286, 131128, 4, 1114143, 56, 4, 1179679, 196664, 1, 1245215, 196664, 2, 1310751, 196664, 3, 1376287, 196664, 4, 1114144, 65592, 4, 1179680, 56, 1, 1245216, 56, 2, 1310752, 56, 3, 1376288, 56, 4, 1114145, 131128, 4, 1179681, 65592, 1, 1245217, 65592, 2, 1310753, 65592, 3, 1376289, 65592, 4, 1114146, 196664, 4, 1179682, 131128, 1, 1245218, 131128, 2, 1310754, 131128, 3, 1376290, 131128, 4, 1114147, 56, 4, 1179683, 196664, 1, 1245219, 196664, 2, 1310755, 196664, 3, 1376291, 196664, 4, 1114148, 65592, 4, 1179684, 56, 1, 1245220, 56, 2, 1310756, 56, 3, 1376292, 56, 4, 1114149, 131128, 4, 1179685, 65592, 1, 1245221, 65592, 2, 1310757, 65592, 3, 1376293, 65592, 4, 1114150, 196664, 4, 1179686, 131128, 1, 1245222, 131128, 2, 1310758, 131128, 3, 1376294, 131128, 4, 1114151, 56, 4, 1179687, 196664, 1, 1245223, 196664, 2, 1310759, 196664, 3, 1376295, 196664, 4, 1114152, 65592, 4, 1179688, 56, 1, 1245224, 56, 2, 1310760, 56, 3, 1376296, 56, 4, 1114153, 131128, 4, 1179689, 65592, 1, 1245225, 65592, 2, 1310761, 65592, 3, 1376297, 65592, 4, 1114154, 196664, 4, 1179690, 131128, 1, 1245226, 131128, 2, 1310762, 131128, 3, 1376298, 131128, 4, 1114155, 196664, 0, 1179691, 196664, 1, 1245227, 196664, 2, 1310763, 196664, 3, 1376299, 196664, 4, 852007, 56, 0, 917543, 56, 1, 983079, 56, 2, 1048615, 56, 3, 852008, 65592, 0, 917544, 65592, 1, 983080, 65592, 2, 1048616, 65592, 3, 852009, 131128, 0, 917545, 131128, 1, 983081, 131128, 2, 1048617, 131128, 3, 852010, 196664, 0, 917546, 196664, 1, 983082, 196664, 2, 1048618, 196664, 3, 852003, 56, 0, 917539, 56, 1, 983075, 56, 2, 1048611, 56, 3, 852004, 65592, 0, 917540, 65592, 1, 983076, 65592, 2, 1048612, 65592, 3, 852005, 131128, 0, 917541, 131128, 1, 983077, 131128, 2, 1048613, 131128, 3, 852006, 196664, 0, 917542, 196664, 1, 983078, 196664, 2, 1048614, 196664, 3, 851999, 56, 0, 917535, 56, 1, 983071, 56, 2, 1048607, 56, 3, 852000, 65592, 0, 917536, 65592, 1, 983072, 65592, 2, 1048608, 65592, 3, 852001, 131128, 0, 917537, 131128, 1, 983073, 131128, 2, 1048609, 131128, 3, 852002, 196664, 0, 917538, 196664, 1, 983074, 196664, 2, 1048610, 196664, 3, 851995, 56, 0, 917531, 56, 1, 983067, 56, 2, 1048603, 56, 3, 851996, 65592, 0, 917532, 65592, 1, 983068, 65592, 2, 1048604, 65592, 3, 851997, 131128, 0, 917533, 131128, 1, 983069, 131128, 2, 1048605, 131128, 3, 851998, 196664, 0, 917534, 196664, 1, 983070, 196664, 2, 1048606, 196664, 3, 851991, 196664, 1, 917527, 196664, 2, 983063, 196664, 3, 1048599, 196664, 4, 851992, 65592, 0, 917528, 65592, 1, 983064, 65592, 2, 1048600, 65592, 3, 851993, 131128, 0, 917529, 131128, 1, 983065, 131128, 2, 1048601, 131128, 3, 851994, 196664, 0, 917530, 196664, 1, 983066, 196664, 2, 1048602, 196664, 3, 524307, 65592, 4, 589843, 56, 1, 655379, 56, 2, 720915, 56, 3, 786451, 262241, 0, 524308, 131128, 4, 589844, 65592, 1, 655380, 65592, 2, 720916, 65592, 3, 786452, 56, 0, 524309, 196664, 4, 589845, 131128, 1, 655381, 131128, 2, 720917, 131128, 3, 786453, 65592, 0, 524310, 56, 0, 589846, 56, 1, 655382, 56, 2, 720918, 56, 3, 786454, 56, 4, 524303, 65592, 4, 589839, 56, 1, 655375, 56, 2, 720911, 56, 3, 786447, 131169, 0, 524304, 131128, 4, 589840, 65592, 1, 655376, 65592, 2, 720912, 65592, 3, 786448, 97, 0, 524305, 196664, 4, 589841, 131128, 1, 655377, 131128, 2, 720913, 131128, 3, 786449, 65633, 0, 524306, 56, 4, 589842, 196664, 1, 655378, 196664, 2, 720914, 196664, 3, 786450, 131169, 0, 524299, 65592, 4, 589835, 56, 1, 655371, 56, 2, 720907, 56, 3, 786443, 65633, 0, 524300, 131128, 4, 589836, 65592, 1, 655372, 65592, 2, 720908, 65592, 3, 786444, 131169, 0, 524301, 196664, 4, 589837, 131128, 1, 655373, 131128, 2, 720909, 131128, 3, 786445, 97, 0, 524302, 56, 4, 589838, 196664, 1, 655374, 196664, 2, 720910, 196664, 3, 786446, 65633, 0, 524295, 65592, 4, 589831, 56, 1, 655367, 56, 2, 720903, 56, 3, 786439, 196664, 0, 524296, 131128, 4, 589832, 65592, 1, 655368, 65592, 2, 720904, 65592, 3, 786440, 56, 0, 524297, 196664, 4, 589833, 131128, 1, 655369, 131128, 2, 720905, 131128, 3, 786441, 65592, 0, 524298, 56, 4, 589834, 196664, 1, 655370, 196664, 2, 720906, 196664, 3, 786442, 97, 0, 524292, 131128, 4, 589828, 65592, 1, 655364, 65592, 2, 720900, 65592, 3, 786436, 56, 0, 524293, 196664, 4, 589829, 131128, 1, 655365, 131128, 2, 720901, 131128, 3, 786437, 65592, 0, 524294, 56, 4, 589830, 196664, 1, 655366, 196664, 2, 720902, 196664, 3, 786438, 131128, 0, 851972, 56, 1, 917508, 56, 2, 983044, 56, 3, 1048580, 56, 4, 851973, 65592, 1, 917509, 65592, 2, 983045, 65592, 3, 1048581, 65592, 4, 851974, 131128, 1, 917510, 131128, 2, 983046, 131128, 3, 1048582, 131128, 4, 851975, 196664, 1, 917511, 196664, 2, 983047, 196664, 3, 1048583, 196664, 4, 851976, 56, 1, 917512, 56, 2, 983048, 56, 3, 1048584, 56, 4, 851977, 65592, 1, 917513, 65592, 2, 983049, 65592, 3, 1048585, 65592, 4, 851978, 131128, 1, 917514, 131128, 2, 983050, 97, 0, 1048586, 131128, 4, 851979, 196664, 1, 917515, 196664, 2, 983051, 65633, 0, 1048587, 196664, 4, 851980, 56, 1, 917516, 56, 2, 983052, 131169, 0, 1048588, 56, 4, 851981, 65592, 1, 917517, 65592, 2, 983053, 262241, 0, 1048589, 65592, 4, 851982, 131128, 1, 917518, 131128, 2, 983054, 262241, 0, 1048590, 131128, 4, 851983, 196664, 1, 917519, 196664, 2, 983055, 97, 0, 1048591, 196664, 4, 851984, 56, 1, 917520, 56, 2, 983056, 65633, 0, 1048592, 56, 4, 851985, 65592, 1, 917521, 65592, 2, 983057, 131169, 0, 1048593, 65592, 4, 851986, 131128, 1, 917522, 131128, 2, 983058, 97, 0, 1048594, 131128, 4, 851987, 196664, 1, 917523, 196664, 2, 983059, 65633, 0, 1048595, 196664, 4, 851988, 56, 1, 917524, 56, 2, 983060, 131169, 0, 1048596, 56, 4, 851989, 65592, 1, 917525, 65592, 2, 983061, 65592, 3, 1048597, 65592, 4, 851990, 131128, 1, 917526, 131128, 2, 983062, 131128, 3, 1048598, 131128, 4, 786455, 65592, 4, 4, 56, 0, 65540, 56, 1, 131076, 56, 2, 196612, 56, 3, 262148, 131128, 0, 5, 65592, 0, 65541, 65592, 1, 131077, 65592, 2, 196613, 65592, 3, 262149, 196664, 0, 6, 131128, 0, 65542, 131128, 1, 131078, 131128, 2, 196614, 131128, 3, 262150, 56, 0, 7, 196664, 0, 65543, 196664, 1, 131079, 196664, 2, 196615, 196664, 3, 262151, 65592, 0, 8, 56, 0, 65544, 56, 1, 131080, 56, 2, 196616, 56, 3, 262152, 131128, 0, 9, 65592, 0, 65545, 65592, 1, 131081, 65592, 2, 196617, 65592, 3, 262153, 196664, 0, 10, 131128, 0, 65546, 131128, 1, 131082, 131128, 2, 196618, 131128, 3, 262154, 56, 0, 11, 196664, 0, 65547, 196664, 1, 131083, 196664, 2, 196619, 196664, 3, 262155, 65592, 0, 12, 56, 0, 65548, 56, 1, 131084, 56, 2, 196620, 56, 3, 262156, 131128, 0, 13, 65592, 0, 65549, 65592, 1, 131085, 65592, 2, 196621, 65592, 3, 262157, 196664, 0, 14, 131128, 0, 65550, 131128, 1, 131086, 131128, 2, 196622, 131128, 3, 262158, 56, 0, 15, 196664, 0, 65551, 196664, 1, 131087, 196664, 2, 196623, 196664, 3, 262159, 65592, 0, 16, 56, 0, 65552, 56, 1, 131088, 56, 2, 196624, 56, 3, 262160, 131128, 0, 17, 65592, 0, 65553, 65592, 1, 131089, 65592, 2, 196625, 65592, 3, 262161, 196664, 0, 18, 131128, 0, 65554, 131128, 1, 131090, 131128, 2, 196626, 131128, 3, 262162, 56, 0, 19, 196664, 0, 65555, 196664, 1, 131091, 196664, 2, 196627, 196664, 3, 262163, 65592, 0, 20, 56, 0, 65556, 56, 1, 131092, 56, 2, 196628, 56, 3, 262164, 131128, 0, 21, 65592, 0, 65557, 65592, 1, 131093, 65592, 2, 196629, 65592, 3, 262165, 196664, 0, 22, 131128, 0, 65558, 131128, 1, 131094, 131128, 2, 196630, 131128, 3, 262166, 56, 0, 23, 196664, 0, 65559, 196664, 1, 131095, 196664, 2, 196631, 196664, 3, 262167, 65592, 0, 24, 56, 0, 65560, 56, 1, 131096, 56, 2, 196632, 56, 3, 262168, 131128, 0, 25, 65592, 0, 65561, 65592, 1, 131097, 65592, 2, 196633, 65592, 3, 262169, 196664, 0, 26, 131128, 0, 65562, 131128, 1, 131098, 131128, 2, 196634, 131128, 3, 262170, 56, 0, 27, 196664, 0, 65563, 196664, 1, 131099, 196664, 2, 196635, 196664, 3, 262171, 65592, 0, 28, 56, 0, 65564, 56, 1, 131100, 56, 2, 196636, 56, 3, 262172, 131128, 0, 29, 65592, 0, 65565, 65592, 1, 131101, 65592, 2, 196637, 65592, 3, 262173, 196664, 0, 30, 131128, 0, 65566, 131128, 1, 131102, 131128, 2, 196638, 131128, 3, 262174, 56, 0, 31, 196664, 0, 65567, 196664, 1, 131103, 196664, 2, 196639, 196664, 3, 262175, 65592, 0, 32, 56, 0, 65568, 56, 1, 131104, 56, 2, 196640, 56, 3, 262176, 131128, 0, 33, 65592, 0, 65569, 65592, 1, 131105, 65592, 2, 196641, 65592, 3, 262177, 196664, 0, 34, 131128, 0, 65570, 131128, 1, 131106, 131128, 2, 196642, 131128, 3, 262178, 56, 0, 35, 196664, 0, 65571, 196664, 1, 131107, 196664, 2, 196643, 196664, 3, 262179, 65592, 0, 36, 56, 0, 65572, 56, 1, 131108, 56, 2, 196644, 56, 3, 262180, 131128, 0, 37, 65592, 0, 65573, 65592, 1, 131109, 65592, 2, 196645, 65592, 3, 262181, 196664, 0, 38, 131128, 0, 65574, 131128, 1, 131110, 131128, 2, 196646, 131128, 3, 262182, 262241, 0, 39, 196664, 0, 65575, 196664, 1, 131111, 196664, 2, 196647, 196664, 3, 262183, 65592, 0, 40, 56, 0, 65576, 56, 1, 131112, 56, 2, 196648, 56, 3, 262184, 131128, 0, 41, 65592, 0, 65577, 65592, 1, 131113, 65592, 2, 196649, 65592, 3, 262185, 196664, 0, 42, 131128, 0, 65578, 131128, 1, 131114, 131128, 2, 196650, 131128, 3, 262186, 131128, 4, 43, 196664, 0, 65579, 196664, 1, 131115, 196664, 2, 196651, 196664, 3, 262187, 196664, 4, 327718, 56, 1, 393254, 56, 2, 458790, 56, 3, 524326, 56, 0, 327719, 65592, 1, 393255, 65592, 2, 458791, 65592, 3, 524327, 65592, 0, 327720, 131128, 1, 393256, 131128, 2, 458792, 131128, 3, 524328, 131128, 0, 327721, 196664, 1, 393257, 196664, 2, 458793, 196664, 3, 524329, 196664, 0, 327714, 56, 1, 393250, 56, 2, 458786, 56, 3, 524322, 56, 0, 327715, 65592, 1, 393251, 65592, 2, 458787, 65592, 3, 524323, 65592, 0, 327716, 131128, 1, 393252, 131128, 2, 458788, 131128, 3, 524324, 131128, 0, 327717, 196664, 1, 393253, 196664, 2, 458789, 196664, 3, 524325, 196664, 0, 327710, 56, 1, 393246, 56, 2, 458782, 56, 3, 524318, 56, 0, 327711, 65592, 1, 393247, 65592, 2, 458783, 65592, 3, 524319, 65592, 0, 327712, 131128, 1, 393248, 131128, 2, 458784, 131128, 3, 524320, 131128, 0, 327713, 196664, 1, 393249, 196664, 2, 458785, 196664, 3, 524321, 196664, 0, 327706, 56, 1, 393242, 56, 2, 458778, 56, 3, 524314, 56, 0, 327707, 65592, 1, 393243, 65592, 2, 458779, 65592, 3, 524315, 65592, 0, 327708, 131128, 1, 393244, 131128, 2, 458780, 131128, 3, 524316, 131128, 0, 327709, 196664, 1, 393245, 196664, 2, 458781, 196664, 3, 524317, 196664, 0, 327702, 56, 1, 393238, 56, 2, 458774, 56, 3, 327703, 65592, 1, 393239, 65592, 2, 458775, 65592, 3, 524311, 65592, 0, 327704, 131128, 1, 393240, 131128, 2, 458776, 131128, 3, 524312, 131128, 0, 327705, 196664, 1, 393241, 196664, 2, 458777, 196664, 3, 524313, 196664, 0, 327698, 56, 1, 393234, 56, 2, 458770, 56, 3, 327699, 65592, 1, 393235, 65592, 2, 458771, 65592, 3, 327700, 131128, 1, 393236, 131128, 2, 458772, 131128, 3, 327701, 196664, 1, 393237, 196664, 2, 458773, 196664, 3, 327694, 56, 1, 393230, 56, 2, 458766, 56, 3, 327695, 65592, 1, 393231, 65592, 2, 458767, 65592, 3, 327696, 131128, 1, 393232, 131128, 2, 458768, 131128, 3, 327697, 196664, 1, 393233, 196664, 2, 458769, 196664, 3, 327690, 56, 1, 393226, 56, 2, 458762, 56, 3, 327691, 65592, 1, 393227, 65592, 2, 458763, 65592, 3, 327692, 131128, 1, 393228, 131128, 2, 458764, 131128, 3, 327693, 196664, 1, 393229, 196664, 2, 458765, 196664, 3, 327686, 56, 1, 393222, 56, 2, 458758, 56, 3, 327687, 65592, 1, 393223, 65592, 2, 458759, 65592, 3, 327688, 131128, 1, 393224, 131128, 2, 458760, 131128, 3, 327689, 196664, 1, 393225, 196664, 2, 458761, 196664, 3, 327684, 131128, 1, 393220, 131128, 2, 458756, 131128, 3, 327685, 196664, 1, 393221, 196664, 2, 458757, 196664, 3, 589847, 65592, 1, 655383, 65592, 2, 720919, 65592, 3, 589848, 131128, 1, 655384, 131128, 2, 720920, 131128, 3, 786456, 131128, 4, 589849, 196664, 1, 655385, 196664, 2, 720921, 196664, 3, 786457, 196664, 4, 589850, 56, 1, 655386, 56, 2, 720922, 56, 3, 786458, 56, 4, 589851, 65592, 1, 655387, 65592, 2, 720923, 65592, 3, 786459, 65592, 4, 589852, 131128, 1, 655388, 131128, 2, 720924, 131128, 3, 786460, 131128, 4, 589853, 196664, 1, 655389, 196664, 2, 720925, 196664, 3, 786461, 196664, 4, 589854, 56, 1, 655390, 56, 2, 720926, 56, 3, 786462, 56, 4, 589855, 65592, 1, 655391, 65592, 2, 720927, 65592, 3, 786463, 65592, 4, 589856, 131128, 1, 655392, 131128, 2, 720928, 131128, 3, 786464, 131128, 4, 589857, 196664, 1, 655393, 196664, 2, 720929, 196664, 3, 786465, 196664, 4, 589858, 56, 1, 655394, 56, 2, 720930, 56, 3, 786466, 56, 4, 589859, 65592, 1, 655395, 65592, 2, 720931, 65592, 3, 786467, 65592, 4, 589860, 131128, 1, 655396, 131128, 2, 720932, 131128, 3, 786468, 131128, 4, 589861, 196664, 1, 655397, 196664, 2, 720933, 196664, 3, 786469, 196664, 4, 589862, 56, 1, 655398, 56, 2, 720934, 56, 3, 786470, 56, 4, 589863, 65592, 1, 655399, 65592, 2, 720935, 65592, 3, 786471, 65592, 4, 589864, 131128, 1, 655400, 131128, 2, 720936, 131128, 3, 786472, 131128, 4, 589865, 196664, 1, 655401, 196664, 2, 720937, 196664, 3, 786473, 196664, 4)
+
+[node name="Player" parent="TileMap" instance=ExtResource("2_y2376")]
+z_as_relative = false
+y_sort_enabled = true
+
+[node name="Camera2D" type="Camera2D" parent="TileMap/Player"]
+zoom = Vector2(5, 5)
+
+[node name="start_timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="score_timer" type="Timer" parent="."]
+
+[node name="mod_timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="MobPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_3tlob")
+
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
+position = Vector2(8, 8)
+rotation = -0.005987952
+
+[connection signal="hit" from="TileMap/Player" to="." method="game_over"]
+[connection signal="timeout" from="start_timer" to="." method="_on_start_timer_timeout"]
+[connection signal="timeout" from="score_timer" to="." method="_on_score_timer_timeout"]
+[connection signal="timeout" from="mod_timer" to="." method="_on_mod_timer_timeout"]

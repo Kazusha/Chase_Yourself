@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Chase_Yourself"
-run/main_scene="uid://c3cne5lr1do8k"
+run/main_scene="uid://d0kjch22bbvur"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/mode=1
 
 [input]
 
